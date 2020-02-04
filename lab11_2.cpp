@@ -3,7 +3,7 @@
 using namespace std;
 
 //Write function prototype here
-
+long long gcd(long long a,long long b);
 int main(){
 	cout << gcd(25,15) << "\n";
 	cout << gcd(144,60) << "\n";
@@ -21,3 +21,11 @@ int main(){
 
 }
 */
+
+long long gcd(long long a,long long b){
+	if(a%b==0){
+		return b;
+	}else{
+		return gcd(b,a%b);
+	}
+}

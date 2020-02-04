@@ -1,11 +1,9 @@
-#include<iostream>
-#include<string>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 //Declare prototype of function template mySwap() here
-
-
+template <typename T>
+void mySwap(T &x,T &y);
 int main(){
 	
 	int x = 6, y = 9;
@@ -36,4 +34,9 @@ int main(){
 
 
 //Write definition of function template mySwap() here
-
+template <typename T>
+void mySwap(T &x,T &y){
+	T temp=x;
+	x=y;
+	y=temp;
+}
